@@ -8,7 +8,7 @@
 
 ## Final
 ### HMPS-SI UNISBANK SEMARANG
-![App Modul](https://github.com/adisuryantoro/Android-HMPS-SI-UNISBANK-2019/blob/master/gifs/animation.gif)
+![App Modul](https://github.com/adisuryantoro/Android-HMPS-SI-UNISBANK-2019/blob/master/gifs/animationhmpssiunisbank.gif)
 ##
 
 #
