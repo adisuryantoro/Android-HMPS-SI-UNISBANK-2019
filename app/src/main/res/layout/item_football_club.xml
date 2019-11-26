@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_football_club"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+        android:layout_marginTop="@dimen/vertical_margin_eight"
+        android:layout_marginRight="@dimen/horizontal_margin_sixteen"
+        android:layout_marginBottom="@dimen/vertical_margin_eight"
+        android:clickable="true"
+        android:elevation="@dimen/margin_four"
+        android:foreground="?attr/selectableItemBackground"
+        tools:ignore="KeyboardInaccessibleWidget">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_logo_club"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+                android:padding="@dimen/padding_margin_two"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+                android:layout_marginTop="@dimen/vertical_margin_twelve"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="@string/string_name_football_club"
+                android:textSize="@dimen/textsize_twenty"
+                app:layout_constraintLeft_toRightOf="@id/iv_logo_club"
+                app:layout_constraintTop_toTopOf="@id/iv_logo_club" />
+
+            <TextView
+                android:id="@+id/tv_create_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+                android:layout_marginTop="@dimen/vertical_margin_twelve"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/string_birthday_football_club"
+                android:textSize="@dimen/textsize_sixteen"
+                app:layout_constraintLeft_toRightOf="@id/iv_logo_club"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_club" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
